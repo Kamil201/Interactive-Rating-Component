@@ -4,7 +4,7 @@
 }
 
 :root {
-    ---primary-clr: hsl(25, 97%, 53%);
+	---primary-clr: hsl(25, 97%, 53%);
 	--White: hsl(0, 0%, 100%);
 	--Light-Grey: hsl(217, 12%, 63%);
 	--Medium-Grey: hsl(216, 12%, 54%);
@@ -15,18 +15,57 @@
 
 body {
 	font-family: "Overpass", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: var(--Very-Dark-Blue);
+}
+
+.rating__container {
+	max-width: 250px;
+	width: 100%;
+	padding: 20px;
+	background-color: var(--Dark-Blue);
+	border-radius: 20px;
+}
+
+.rating__star-btn {
+	padding: 10px;
+	border-radius: 50%;
+	background-color: var(--Medium-Grey);
+	outline: none;
+}
+
+.rating__heading {
+	color: var(--White);
+}
+
+.rating__request{
+    font-size: var(--fs);
+    color: var(--Medium-Grey);
+}
+
+.rating__buttons {
     display:flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: var(--Very-Dark-Blue);
+    justify-content: space-between;
 }
 
-.rating__container{
-    max-width: 250px;
+.rating__btn{
+    padding:10px;
+    border-radius:50%;
+    background-color: var(--Light-Grey);
+    cursor:pointer;
+}
+
+.rating__submit__btn{
+    margin-top:20px;
+    padding:10px;
     width:100%;
-    padding:20px;
-    background-color: var(--Dark-Blue);
-    border-radius:20px;
+    border-radius:10px;
+    background-color: var(---primary-clr);
+    color: var(--White);
+    cursor:pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
-
