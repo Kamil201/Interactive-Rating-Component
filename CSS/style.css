@@ -20,6 +20,7 @@ body {
 	justify-content: center;
 	min-height: 100vh;
 	background-color: var(--Very-Dark-Blue);
+	overflow: hidden;
 }
 
 .rating__container {
@@ -56,7 +57,7 @@ body {
 	border-radius: 50%;
 	background-color: var(--Light-Grey);
 	cursor: pointer;
-     transition: .3s ease-in;
+	transition: 0.3s ease-in;
 }
 
 .rating__btn:hover {
@@ -69,7 +70,7 @@ body {
 }
 
 .rating__submit__btn {
-    font-weight: 700;
+	font-weight: 700;
 	margin-top: 20px;
 	padding: 10px;
 	width: 100%;
@@ -79,11 +80,39 @@ body {
 	cursor: pointer;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-    transition: .3s ease-in;
+	transition: 0.3s ease-in;
 }
 
+.rating__submit__btn:hover {
+	background-color: var(--White);
+	color: var(---primary-clr);
+}
 
-.rating__submit__btn:hover{
-    background-color: var(--White);
-    color:var(---primary-clr);
-};
+.rating__popup {
+	margin-left: 20px;
+	max-width: 250px;
+	width: 100%;
+	padding: 20px;
+	background-color: var(--Dark-Blue);
+	border-radius: 10px;
+	display:none;
+}
+
+.rating__result {
+	color: var(---primary-clr);
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: rgba(149, 158, 172, 0.1);
+	text-align: center;
+}
+
+.rating__thank-you__heading {
+    text-align: center;
+	color: var(--White);
+}
+
+.rating__thank-you__massage {
+	color: var(--Light-Grey);
+    text-align: center;
+}
