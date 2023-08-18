@@ -4,6 +4,7 @@
 }
 
 :root {
+    ---primary-clr: hsl(25, 97%, 53%);
 	--White: hsl(0, 0%, 100%);
 	--Light-Grey: hsl(217, 12%, 63%);
 	--Medium-Grey: hsl(216, 12%, 54%);
@@ -14,4 +15,11 @@
 
 body {
 	font-family: "Overpass", sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--Very-Dark-Blue);
 }
+
+
