@@ -100,7 +100,7 @@ body {
 	padding: 20px;
 	background-color: var(--Dark-Blue);
 	border-radius: 10px;
-	/* display: none; */
+	display: none;
 }
 
 .rating__result {
@@ -122,8 +122,3 @@ body {
 	text-align: center;
 }
 
-/* @media screen and (min-width: 768px) {
-	.rating__container {
-        max-width:500px;
-	}
-} */
