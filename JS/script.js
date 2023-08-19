@@ -9,7 +9,8 @@ const ratingContainerEl = document.querySelector(".rating__container");
 const handleRate = (e) => {
 	const btn = e.target;
     const rating = parseInt(btn.getAttribute("data-rating"))
-    selectedNumberEL.textContent = `${rating}`
+    selectedNumberEL.textContent = `${rating}`;
+    console.log(selectedNumberEL);
 
 };
 
