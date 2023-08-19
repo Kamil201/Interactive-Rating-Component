@@ -33,9 +33,10 @@ body {
 
 .rating__star-btn {
 	padding: 10px;
+	width:40px;
+	height:40px;
 	border-radius: 50%;
-	background-color: var(--Medium-Grey);
-	outline: none;
+	background-color: rgba(149, 158, 172, 0.1); 
 }
 
 .rating__heading {
@@ -54,8 +55,12 @@ body {
 
 .rating__btn {
 	padding: 10px;
+	height:40px;
+	width:40px;
+	border:none;
 	border-radius: 50%;
-	background-color: var(--Light-Grey);
+	color: var(--White);
+	background-color: rgba(149, 158, 172, 0.1); 
 	cursor: pointer;
 	transition: 0.3s ease-in;
 }
@@ -95,7 +100,7 @@ body {
 	padding: 20px;
 	background-color: var(--Dark-Blue);
 	border-radius: 10px;
-	display:none;
+	/* display: none; */
 }
 
 .rating__result {
@@ -108,11 +113,17 @@ body {
 }
 
 .rating__thank-you__heading {
-    text-align: center;
+	text-align: center;
 	color: var(--White);
 }
 
 .rating__thank-you__massage {
 	color: var(--Light-Grey);
-    text-align: center;
+	text-align: center;
 }
+
+/* @media screen and (min-width: 768px) {
+	.rating__container {
+        max-width:500px;
+	}
+} */
